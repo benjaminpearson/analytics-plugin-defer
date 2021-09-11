@@ -1,0 +1,27 @@
+name: Release
+on:
+  push:
+    branches:
+      - main
+jobs:
+  release:
+    name: Release
+    runs-on: ubuntu-latest
+    env:
+      NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v2.1.4
+        with:
+          node-version: 12
+
+      - name: Installation
+        run: npm ci
+
+      - name: Compilation
+        run: npm run build
+
+      - name: Release
+        run: npx semantic-release

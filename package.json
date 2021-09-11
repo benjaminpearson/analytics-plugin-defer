@@ -1,0 +1,44 @@
+{
+  "name": "analytics-plugin-defer",
+  "description": "Analytics plugin to defer loading plugins until page interaction has occurred",
+  "author": "Benjamin Pearson",
+  "version": "0.0.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "license": "MIT",
+  "homepage": "https://github.com/benjaminpearson/analytics-plugin-defer#readme",
+  "repository": "https://github.com/benjaminpearson/analytics-plugin-defer",
+  "scripts": {
+    "semantic-release": "semantic-release",
+    "build": "tsc -p ."
+  },
+  "files": [
+    "dist"
+  ],
+  "devDependencies": {
+    "@commitlint/cli": "^9.0.1",
+    "@commitlint/config-conventional": "^9.0.1",
+    "@semantic-release/git": "^9.0.0",
+    "@semantic-release/npm": "^7.0.5",
+    "analytics": "^0.7.2",
+    "husky": "^4.2.5",
+    "semantic-release": "^17.1.1",
+    "typescript": "^4.1.3"
+  },
+  "peerDependencies": {
+    "analytics": "^0.7.2"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  }
+}
