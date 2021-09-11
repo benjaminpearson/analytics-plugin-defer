@@ -51,6 +51,6 @@ After initializing `analytics` with the `analyticsDefer` plugin, tracking data w
 
 ### Configuration options
 
-| Option                                        | description                                                                      |
-| :-------------------------------------------- | :------------------------------------------------------------------------------- |
-| `pluginsToDefer` <br/>**required** - string[] | A list of all the plugin names to defer until there is interactoin with the page |
+| Option                                 | description                                                                      |
+| :------------------------------------- | :------------------------------------------------------------------------------- |
+| `plugins` <br/>**required** - string[] | A list of all the plugin names to defer until there is interactoin with the page |
