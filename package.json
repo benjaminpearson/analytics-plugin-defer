@@ -2,7 +2,7 @@
   "name": "analytics-plugin-defer",
   "description": "Analytics plugin to defer loading plugins until page interaction has occurred",
   "author": "Benjamin Pearson",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "license": "MIT",
