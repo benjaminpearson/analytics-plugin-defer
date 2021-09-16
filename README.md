@@ -25,7 +25,7 @@ const analytics = Analytics({
     deferPlugin({ plugins: ['google-tag-manager'] }),
     googleTagManager({
       containerId: 'GTM-123456',
-      enabled: false,
+      enabled: false, // @NOTE: Important for `enabled: false` if you want it to be deferred
     }),
   ],
 });
